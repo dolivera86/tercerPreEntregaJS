@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/*Receteo inicial*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --gam-negro: #5A5353;
+    --gam-montan: #A07178;
+    --gam-pale: #E6CCBE;
+    --gam-chinviolet: #776274;
+}
+
+.header {
+    height: 150px;
+    background: url('../img/fondotienda.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    font-family: sans-serif;
+}
+
+.container-header {
+    color: black;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    padding-block: 1rem;
+}
+
+.titulo {
+    margin-bottom: 1rem;
+}
+
+.articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.productoDeLista {
+    background-color: var(--gam-negro);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--gam-pale);
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.zapa-img {
+    border-radius: .85rem;
+}
+
+.btn-articulo {
+    border-radius: .75rem;
+    border: 0;
+    background-color: var(--gam-montan);
+    color: var(--gam-pale);
+    padding: .5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: 2px solid var(--gam-chinviolet);
+    transition: .2s;
+}
+
+.btn-articulo:hover {
+    background-color: var(--gam-pale);
+    color: var(--gam-negro);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.productos-compras {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.producto-compra {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gam-negro);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: var(--gam-pale);
+}
+
+.btn-eliminar-compra {
+    background-color: var(--gam-negro);
+    border: 0;
+    padding: .25rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+
+.d-none {
+    display: none;
+}
+
+.footer {
+    background-color: var(--gam-negro);
+    color: var(--gam-montan);
+    padding-block: 2rem;
+    text-decoration: underline;
+}
